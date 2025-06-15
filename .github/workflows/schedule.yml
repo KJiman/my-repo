@@ -1,0 +1,13 @@
+name: Schedule
+on:
+  schedule:                       # 定期的にトリガーするワークフロートリガー
+    - cron: "0 7 * * *"           # 毎朝AM7時に実行
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+			# 現在の日時を出力
+      - run: echo "Scheduled workflow executed at $(date)"
+      # 定期的なジョブのメッセージ
+      - run: echo "This is a scheduled job running daily."
