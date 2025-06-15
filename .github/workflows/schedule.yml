@@ -7,7 +7,5 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-			# 現在の日時を出力
-      - run: echo "Scheduled workflow executed at $(date)"
-      # 定期的なジョブのメッセージ
-      - run: echo "This is a scheduled job running daily."
+      - run: echo "Scheduled workflow executed at $(date)" # 現在の日時を出力
+      - run: echo "This is a scheduled job running daily." # 定期的なジョブのメッセージ
