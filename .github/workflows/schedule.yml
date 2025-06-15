@@ -1,7 +1,7 @@
 name: Schedule
 on:
   schedule:                       # 定期的にトリガーするワークフロートリガー
-    - cron: "0 7 * * *"           # 毎朝AM7時に実行
+    - cron: "0 10 * * *"          # UTC 日本時間19:00に実行
 
 jobs:
   run:
